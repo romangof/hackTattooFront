@@ -1,3 +1,11 @@
+* {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../assets/img/background.jpg);
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -12,3 +20,42 @@
 .thumbnail img.pull-right {
   width: 50px;
 }
+
+
+
+/*      REGISTER      */
+
+.register-box {
+  position: fixed;
+  margin-top: 10%;
+  left: 5%;
+}
+
+
+
+
+/*      Home          */
+
+.header{
+  background-color: #100101;
+  height: 60px;
+}
+
+#logo{
+  width: 70px;
+  -webkit-filter: invert(.8);
+  position: relative;
+  left: 20px
+}
+
+.button{
+  padding-top: 13px;
+}
+
+.text{
+  color:white;
+  text-align: center;
+  position: relative;
+  top: 162px;
+}
+

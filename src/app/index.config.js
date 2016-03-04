@@ -16,26 +16,6 @@
     toastrConfig.positionClass = 'toast-top-right';
     toastrConfig.preventDuplicates = true;
     toastrConfig.progressBar = true;
-
-    $httpProvider.defaults.useXDomain = true;
-    $httpProvider.interceptors.push(
-
-    function ($q, $window) {
-      return {
-        request: function(config) { 
-
-          config.headers = config.headers || {};
-          config.headers['Content-Type'] = 'application/json';
-          config.headers['Accept'] = 'json';
-
-          if ($window.sessionStorage.user) {
-            config.headers['X-Token'] = $window.sessionStorage.user;
-          }           
-          return config;
-        }
-      };
-    }
-    );
   }
 
 })();
