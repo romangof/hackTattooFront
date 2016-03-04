@@ -1,31 +1,33 @@
 <div class="container well box">
   <div class="row">
-    
-    <div class="col-xs-4">
-      <div ng-controller="AppCtrl" style='padding: 40px;' ng-cloak>
-        <md-content>
-          <h4>Standard date-picker</h4>
-          <md-datepicker ng-model="myDate" md-placeholder="Enter date"></md-datepicker>
-          <h4>With ngMessages</h4>
-          <form name="myForm">
-            <md-datepicker name="dateField" ng-model="myDate" md-placeholder="Enter date"
-                required md-min-date="minDate" md-max-date="maxDate"
-                md-date-filter="onlyWeekendsPredicate"></md-datepicker>
-            <div class="validation-messages" ng-messages="myForm.dateField.$error">
-              <div ng-message="valid">The entered value is not a date!</div>
-              <div ng-message="required">This date is required!</div>
-              <div ng-message="mindate">Date is too early!</div>
-              <div ng-message="maxdate">Date is too late!</div>
-              <div ng-message="filtered">Only weekends are allowed!</div>
-            </div>
-          </form>
-        </md-content>
-      </div>
-    </div>
+    <div ng-controller="ClientController" style='padding: 40px;' ng-cloak="" class="datepickerdemoBasicUsage">
+      <md-content>
+        
+        <h4>Programa tu cita</h4>
+        <md-datepicker ng-model="date" md-placeholder="Enter date"></md-datepicker>
 
+        <form name="myForm">
+          <div class="validation-messages" ng-messages="myForm.dateField.$error">
+            <div ng-message="valid">The entered value is not a date!</div>
+            <div ng-message="required">This date is required!</div>
+            <div ng-message="mindate">Date is too early!</div>
+            <div ng-message="maxdate">Date is too late!</div>
+            <div ng-message="filtered">Only weekends are allowed!</div>
+          </div>
+        </form> 
+      </md-content>
+      <form name="myForm">
+       <label for="exampleInput">Hora:</label>
+       <input type="time" id="exampleInput" name="input" ng-model="example.value"
+           placeholder="HH:mm:ss"/>
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
     <div class="col-xs-4 col-xs-offset-4">
       <!-- <div class="panel-control"> -->
-        <article class="col-sm-3">
+
           <h4 class="marca">Tatuador de tu preferencia</h4>
           <select class="form-control">
             <option>Elegir tatuador</option>
@@ -34,9 +36,7 @@
             <option>sdfasd</option>
             <option>asfsdf</option>
             <option>sdfasd</option>
-          </select>
-        </article>
-      <!-- </div> -->
+          </select>      <!-- </div> -->
     </div>
 
   </div>
