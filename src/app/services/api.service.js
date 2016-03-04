@@ -14,6 +14,9 @@ angular
     this.login = toUrl('/access');
     this.registerArtist = toUrl('/registerArtist');
     this.loginArtist = toUrl('/accessArtist');
+    this.artists = toUrl('/allArtists');
+    this.clients = toUrl('/allClients')
+    this.dates = toUrl('/allDates')
   });
 
 
