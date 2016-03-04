@@ -8,11 +8,12 @@ angular
       return baseUrl+path;
     }
 
-    // this.clients = toUrl('/clients/:id');
-    // this.artists = toUrl('/artists/:id');
     this.dates = toUrl('/dates');
     this.access = toUrl('/access');
-    this.register = toUrl('/clients');
+    this.register = toUrl('/register');
+    this.login = toUrl('/access');
+    this.registerArtist = toUrl('/registerArtist');
+    this.loginArtist = toUrl('/accessArtist');
   });
 
 

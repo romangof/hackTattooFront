@@ -11,5 +11,9 @@ angular
       console.log('here');
       $state.go('home.login');
     };
+    vm.register = function () {
+      console.log('here');
+      $state.go('home.register');
+    };
 
   });

@@ -22,8 +22,8 @@
         controllerAs: 'home'
       });
     $stateProvider
-      .state('register', {
-        url: '/register',
+      .state('home.register', {
+        // url: '/register',
         templateUrl: 'app/register/register.html',
         controller: 'RegisterController',
         controllerAs: 'register'
@@ -32,8 +32,8 @@
       .state('home.login', {
         // url: '/login',
         templateUrl: 'app/login/login.html',
-        // controller: 'LoginController',
-        // controllerAs: 'login'
+        controller: 'LoginController',
+        controllerAs: 'login'
       });
 
       
