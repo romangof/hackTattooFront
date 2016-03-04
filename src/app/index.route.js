@@ -29,11 +29,11 @@
         controllerAs: 'register'
       });
     $stateProvider
-      .state('login', {
-        url: '/login',
+      .state('home.login', {
+        // url: '/login',
         templateUrl: 'app/login/login.html',
-        controller: 'LoginController',
-        controllerAs: 'login'
+        // controller: 'LoginController',
+        // controllerAs: 'login'
       });
 
     $urlRouterProvider.otherwise('/home');

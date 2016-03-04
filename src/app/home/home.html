@@ -3,12 +3,12 @@
 
     <div class="col-xs-2" ng-click="">
       <a href="#">
-        <img src="../../assets/img/logo.png" id="logo"/>
+        <img src="assets/img/logo.png" id="logo"/>
       </a>
     </div>
 
     <div class="col-xs-1 col-xs-offset-8 button">
-      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#login">Login</button>
+      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#login" ng-click="home.login()">Login</button>
     </div>
 
     <div class="col-xs-1 button">
@@ -33,18 +33,19 @@
 </div>
 <!-- </div> -->
 
-<div class="container">
+
+<!-- <div class="container"> -->
 
   <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-    <div class="modal-dialog modal-sm">
-      hola
+    <div class="modal-dialog modal-sm" ui-sref="login">
+      <div ui-view></div>
     </div>
   </div>
 
-  <div class="modal fade chao" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+<!--   <div class="modal fade chao" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
     <div class="modal-dialog modal-sm">
       chao
     </div>
   </div>
-
-</div>
+ -->
+<!-- </div> -->
