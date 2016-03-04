@@ -35,8 +35,13 @@
         controller: 'LoginController',
         controllerAs: 'login'
       });
-
-      
+    $stateProvider
+      .state('client', {
+        url: '/client',
+        templateUrl: 'app/client/client.html',
+        controller: 'ClientController',
+        controllerAs: 'client'
+      });
 
     $urlRouterProvider.otherwise('/home');
   }
