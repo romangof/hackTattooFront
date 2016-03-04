@@ -17,30 +17,50 @@
     $stateProvider
       .state('home', {
         url: '/home',
-        templateUrl: 'app/home/home.html',
-        controller: 'HomeController',
-        controllerAs: 'home'
+        views: {
+          'main':{
+            templateUrl: 'app/home/home.html',
+            controller: 'HomeController',
+            controllerAs: 'home'
+          }
+        }
+      });
+    
+    $stateProvider
+      .state('register', {
+        views: {
+          'modal':{
+            templateUrl: 'app/register/register.html',
+            controller: 'RegisterController',
+            controllerAs: 'register'
+          }
+        }
       });
     $stateProvider
-      .state('home.register', {
-        // url: '/register',
-        templateUrl: 'app/register/register.html',
-        controller: 'RegisterController',
-        controllerAs: 'register'
-      });
-    $stateProvider
-      .state('home.login', {
-        // url: '/login',
-        templateUrl: 'app/login/login.html',
-        controller: 'LoginController',
-        controllerAs: 'login'
+      .state('login', {
+        views: {
+          'modal':{
+            templateUrl: 'app/login/login.html',
+            controller: 'LoginController',
+            controllerAs: 'login'
+          }
+        }
       });
     $stateProvider
       .state('client', {
         url: '/client',
-        templateUrl: 'app/client/client.html',
-        controller: 'ClientController',
-        controllerAs: 'client'
+        views: {
+          'main':{
+            templateUrl: 'app/client/client.html',
+            controller: 'ClientController',
+            controllerAs: 'client'
+          }
+        }
+      });
+    $stateProvider
+      .state('index', {
+        url: '/',
+        templateUrl: 'index.html'
       });
 
     $urlRouterProvider.otherwise('/home');
