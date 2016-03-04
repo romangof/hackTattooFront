@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(../assets/img/background.jpg);
+  background-image: url(../assets/img/black-retro-lilz-tattoo_177501.jpg);
 }
 
 .browsehappy {
@@ -37,7 +37,7 @@ body {
 /*      Home          */
 
 .header{
-  background-color: #100101;
+  background-color: rgba(82, 20, 61, 0.7);
   height: 60px;
 }
 
@@ -59,11 +59,11 @@ body {
   top: 162px;
 }
 
-.background {
+/*.background {
   background-image: url('black-retro-lilz-tattoo_177501.jpg');
   height: 100vh;
 }
-
+*/
 .menu1 {
   border-radius: 0px;
 }

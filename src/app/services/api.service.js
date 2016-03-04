@@ -10,8 +10,10 @@ angular
 
     this.dates = toUrl('/dates');
     this.access = toUrl('/access');
-    this.register = toUrl('/registerClient');
-    this.login = toUrl('/loginClient');
+    this.register = toUrl('/register');
+    this.login = toUrl('/access');
+    this.registerArtist = toUrl('/registerArtist');
+    this.loginArtist = toUrl('/accessArtist');
   });
 
 
