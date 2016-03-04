@@ -68,7 +68,5 @@ body {
 }
 
 .footer {
-  position: relative;
-  top: 20vh;
-  left: 22%;
+  margin-bottom: 10px;
 }
