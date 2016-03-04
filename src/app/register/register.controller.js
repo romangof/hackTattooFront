@@ -13,13 +13,17 @@ angular
         && vm.user.passConf && (vm.user.passConf == vm.user.password)) {
 
         console.log('registrando usuario');
-        // $http({
-        //   method: 'POST',
-        //   url: API.register,
-        //   data:user
-        // }).success(function (data){
-        //   console.log(data);
-        // })
+        $http({
+          method: 'POST',
+          url: API.register,
+          data:{
+            name: vm.user.username,
+            email: vm.user.email,
+            password: vm.user.password
+          }
+        }).success(function (data){
+          console.log(data);
+        })
       }
     };
 

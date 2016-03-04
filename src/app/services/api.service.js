@@ -12,7 +12,7 @@ angular
     // this.artists = toUrl('/artists/:id');
     this.dates = toUrl('/dates');
     this.access = toUrl('/access');
-    this.register = toUrl('/clients');
+    this.register = toUrl('/registerClient');
   });
 
 
