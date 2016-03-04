@@ -1,0 +1,46 @@
+<div ng-controller="AppCtrl" style='padding: 40px;' ng-cloak>
+  <md-content>
+    <h4>Standard date-picker</h4>
+    <md-datepicker ng-model="myDate" md-placeholder="Enter date"></md-datepicker>
+    <h4>With ngMessages</h4>
+    <form name="myForm">
+      <md-datepicker name="dateField" ng-model="myDate" md-placeholder="Enter date"
+          required md-min-date="minDate" md-max-date="maxDate"
+          md-date-filter="onlyWeekendsPredicate"></md-datepicker>
+      <div class="validation-messages" ng-messages="myForm.dateField.$error">
+        <div ng-message="valid">The entered value is not a date!</div>
+        <div ng-message="required">This date is required!</div>
+        <div ng-message="mindate">Date is too early!</div>
+        <div ng-message="maxdate">Date is too late!</div>
+        <div ng-message="filtered">Only weekends are allowed!</div>
+      </div>
+    </form>
+  </md-content>
+</div>
+
+<div class="panel-control">
+  <article class="col-sm-3">
+    <h4 class="marca">Tatuador de tu preferencia</h4>
+    <select class="form-control">
+      <option>Elegir tatuador</option>
+      <option>dsffs</option>
+      <option>dsfasdf</option>
+      <option>sdfasd</option>
+      <option>asfsdf</option>
+      <option>sdfasd</option>
+    </select>
+  </article>
+</div>
+          
+
+
+<div class="footer">
+  <div class="collapse navbar-collapse footer" id="bs-example-navbar-collapse-6">
+    <p>¡Síguenos donde quieras!</p>
+    <ul class="nav navbar-nav center">
+      <li><a class="a" target="_blank" href="https://www.facebook.com"></a></li>
+      <li><a class="b" target="_blank" href="https://twitter.com"></a></li>
+      <li><a class="c" target="_blank" href="https://instagram.com"></a></li>
+    </ul>
+  </div>
+</div>

@@ -68,3 +68,14 @@ body {
   border-radius: 0px;
 }
 
+.a {
+  background-image: url(../assets/img/facebook_icon.png);
+}
+
+.b {
+  background-image: url(../assets/img/twitter_icon.png);
+}
+
+.c {
+  background-image: url(../assets/img/instagram_icon.png);
+}

@@ -36,6 +36,8 @@
         // controllerAs: 'login'
       });
 
+      
+
     $urlRouterProvider.otherwise('/home');
   }
 
