@@ -5,12 +5,19 @@ angular
   .controller('IndexController', function ($state) {
 
     var vm = this;
+    console.log('loading index');
+    $state.go('home');
 
+    vm.home = function () {
+      $state.go('home');
+    }
     vm.login = function () {
-      $state.go('home.login');
+      console.log('logging in');
+      $state.go('login');
     };
     vm.register = function () {
-      $state.go('home.register');
+      console.log('registering');
+      $state.go('register');
     };
 
   });

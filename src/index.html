@@ -2,7 +2,7 @@
 <html ng-app="hackTattooFront">
 <head>
   <meta charset="utf-8">
-  <title>hackTattooFront</title>
+  <title>HackTattoo</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
@@ -20,7 +20,7 @@
   <!-- endinject -->
   <!-- endbuild -->
 </head>
-<body>
+<body ng-controller="IndexController as index">
   <!--[if lt IE 10]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -28,23 +28,31 @@
     <div class="navbar-fixed-top header">
 
       <div class="col-xs-2" ng-click="">
-        <a href="#">
+        <a ng-click="index.home()">
           <img src="assets/img/logo.png" id="logo"/>
         </a>
       </div>
 
       <div class="col-xs-1 col-xs-offset-8 button">
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#login" ng-click="home.login()">Login</button>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#login" ng-click="index.login()">Login</button>
       </div>
 
       <div class="col-xs-1 button">
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#login" ng-click="home.register()">Register</button>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#login" ng-click="index.register()">Register</button>
       </div>
 
     </div>
   </header>
 
-  <div ui-view></div>
+
+  <div ui-view="main"></div>
+
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" ui-sref="home">
+    <div class="modal-dialog modal-sm">
+      <div ui-view="modal"></div>
+    </div>
+  </div>
+
 
   <footer>
     <div class="navbar-fixed-bottom">

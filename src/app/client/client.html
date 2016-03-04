@@ -1,4 +1,5 @@
 <div class="container well box">
+
   <div class="row">
     <div ng-controller="ClientController" style='padding: 40px;' ng-cloak="" class="datepickerdemoBasicUsage">
       <md-content>
@@ -24,20 +25,16 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-4">
-      <!-- <div class="panel-control"> -->
+  <!-- <button ng-click="client.get()"></button> -->
 
-          <h4 class="marca">Tatuador de tu preferencia</h4>
-          <select class="form-control">
-            <option>Elegir tatuador</option>
-            <option>dsffs</option>
-            <option>dsfasdf</option>
-            <option>sdfasd</option>
-            <option>asfsdf</option>
-            <option>sdfasd</option>
-          </select>      <!-- </div> -->
-    </div>
-
+  <div class="col-xs-4 col-xs-offset-4">
+    <!-- <div class="panel-control"> -->
+    <h4 class="marca">Tatuador de tu preferencia</h4>
+    <select class="form-control">
+      <!-- <option>Elegir tatuador</option> -->
+      <option ng-repeat="artist in client.artists">{{artist.name}}</option>
+    </select>
+    <!-- </div> -->
   </div>
+
 </div>
